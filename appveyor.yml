@@ -8,16 +8,17 @@ skip_tags: true
 
 image: Ubuntu2204
 
-init:
+#init:
 #    - sudo apt-get update
 #    - sudo apt-get upgrade
+# clone_dir: C:\projects\myprojec
+
+install: 
     - sudo apt-get install -y python3.11 python3-pip
     - python3 -m pip install --upgrade pip
     - pip3 install scons markdown
     - sudo apt-get install -y gettext
-# clone_dir: C:\projects\myprojec
 
-install: off
 
 build: off
 #build_mode: script
