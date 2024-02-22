@@ -30,7 +30,7 @@ test: off
 deploy: off
 
 artifacts:
-- path: *.nvda-addon
+- path: '*.nvda-addon'
 
 on_success:
 - "appveyor PushArtifact *.nvda-addon"
