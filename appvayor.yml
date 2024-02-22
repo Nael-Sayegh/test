@@ -17,10 +17,14 @@ init:
     sudo apt-get install -y gettext
 # clone_dir: C:\projects\myprojec
 
-install:
+install: off
+
+build: off
+
+build_script:
 - sh: |
     scons version={build}
-build: off
+
 test: off
 deploy: off
 
