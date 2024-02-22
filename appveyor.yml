@@ -6,7 +6,7 @@ branches:
 
 skip_tags: true
 
-image: ubuntu
+image: Ubuntu2204
 
 init:
     - sudo apt-get update
