@@ -20,10 +20,6 @@ init:
 install:
 - sh: |
     scons version={build}
-
-build_script:
-
-after_build:
 build: off
 test: off
 deploy: off
