@@ -20,7 +20,7 @@ init:
 install: off
 
 build: off
-
+build_mode: script
 build_script:
 - sh: |
     scons version={build}
