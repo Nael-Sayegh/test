@@ -9,6 +9,7 @@ skip_tags: true
 image: ubuntu
 
 init:
+- echo "test version"
 -sh: |
     sudo apt-get update
     sudo apt-get install -y python3.11 python3-pip
