@@ -15,8 +15,8 @@ image: Ubuntu2204
 
 install: 
     - sudo apt-get install -y python3.11 python3-pip
-    - python3 -m pip install --upgrade pip
-    - pip3 install scons markdown
+    - py -m pip install --upgrade pip
+    - py -m pip install scons markdown
     - sudo apt-get install -y gettext
 
 
