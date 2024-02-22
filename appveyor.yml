@@ -9,13 +9,12 @@ skip_tags: true
 image: ubuntu
 
 init:
-- echo "test version"
--sh: |
-    sudo apt-get update
-    sudo apt-get install -y python3.11 python3-pip
-    python3 -m pip install --upgrade pip
-    pip3 install scons markdown
-    sudo apt-get install -y gettext
+    -sh: |
+        sudo apt-get update
+        sudo apt-get install -y python3.11 python3-pip
+        python3 -m pip install --upgrade pip
+        pip3 install scons markdown
+        sudo apt-get install -y gettext
 # clone_dir: C:\projects\myprojec
 
 install: off
@@ -23,14 +22,14 @@ install: off
 build: off
 build_mode: script
 build_script:
-- sh: |
-    scons version={build}
+    - sh: |
+        scons version={build}
 
 test: off
 deploy: off
 
 artifacts:
-- path: '*.nvda-addon'
+    - path: '*.nvda-addon'
 
 on_success:
-- "appveyor PushArtifact *.nvda-addon"
+    - "appveyor PushArtifact *.nvda-addon"
