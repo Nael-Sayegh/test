@@ -8,26 +8,18 @@ skip_tags: true
 
 image: Ubuntu2204
 
-#init:
-#    - sudo apt-get update
-#    - sudo apt-get upgrade
-
-
 environment:
     PY_PYTHON: 3.11-32
 
 install: 
-#    - sudo apt-get install -y python3.11 python3-pip
     - sudo pip install --upgrade --no-warn-script-location pip
     - sudo pip install --no-warn-script-location scons markdown 
     - sudo apt-get install -y gettext
 
-
 build: off
-#build_mode: script
 build_script:
     - scons version=$(printenv APPVEYOR_BUILD_NUMBER)
-
+    
 test: off
 deploy: off
 
@@ -36,3 +28,12 @@ artifacts:
 
 on_success:
     - "appveyor PushArtifact *.nvda-addon"
+
+notifications:
+  - provider: Email
+    to:
+      - "naelousay@gmail.com"
+    on_build_success: true
+    on_build_failure: false
+    on_build_status_changed: false
+    
