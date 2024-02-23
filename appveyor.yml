@@ -26,7 +26,7 @@ install:
 build: off
 #build_mode: script
 build_script:
-    - scons version=$appveyor_build_number
+    - scons version=$(printenv appveyor_build_number)
 
 test: off
 deploy: off
