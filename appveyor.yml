@@ -26,8 +26,7 @@ install:
 build: off
 #build_mode: script
 build_script:
-    $version = "version=$env:$env:APPVEYOR_BUILD_number"
-    - scons $version
+    - scons version=$appveyor_build_number
 
 test: off
 deploy: off
