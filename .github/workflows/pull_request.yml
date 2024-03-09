@@ -13,7 +13,7 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.sha }}
     - name: Set up Python 3.11
-      uses: actions/setup-python@v4
+    - uses: actions/setup-python@v4
       with:
         python-version: 3.11
     - name: Install dependencies
@@ -27,13 +27,13 @@ jobs:
     - name: build with hash of commit
       run: scons version=$COMMIT_HASH
     - name: upload artifacts
-      uses: actions/upload-artifact@v4
-      id: upload-artifact
+    - uses: actions/upload-artifact@v4
+      id: artifact-url
       with:
         name: build-artifact
         path: ./*.nvda-addon
     - name: comment on pull request
-      uses: actions/github-script@v5
+    - uses: actions/github-script@v5
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
@@ -41,5 +41,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: `Addon built successfully. [Download here](${{ steps.upload-artifact.outputs.arttifact-url }})`
+            body: `Addon built successfully. [Download here](${{ steps.artifact-url.outputs.arttifact-url }})`
           })  
