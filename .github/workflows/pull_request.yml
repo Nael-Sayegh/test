@@ -30,7 +30,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: build-artifact
-        path: *.nvda-addon
+        path: ./*.nvda-addon
     - name: comment on pull request
       uses: actions/github-script@v5
       with:
