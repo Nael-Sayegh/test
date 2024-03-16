@@ -1,60 +1,48 @@
-# FileZilla
+# Scanvox pour NVDA
 
-* Auteur: Nael Sayegh 
-* URL: [infos@nael-accessvision.com](mailto:infos@nael-accessvision.com)
-* Télécharger la [version stable][1] ;
-<!-- * Download the [Latest version on Nael-AccessVision.com](https://) ; -->
-* Compatibilité NVDA: 2021.3 et supérieurs ;
-* [Code source sur GitHub][2] ;
+* Auteur : Nael Sayegh
+* URL : [infos@nael-accessvision.com](mailto:infos@nael-accessvision.com)
+* Téléchargez la [version stable][1];
+* Compatibilité avec NVDA : 2021.3 et plus récente;
+* [Code source sur GitHub][2];
 
 # Présentation
 
-Ce module apporte des améliorations au logiciel FileZilla en ajoutant des
-raccourcis clavier ainsi que des labels manquants sur des boutons.
+Cette extension utilise le logiciel Scanvox pour lire vos documents papier. Elle a été créée avec l'aide du développeur du logiciel et ne nécessite aucune installation supplémentaire.
 
-## Raccourcis
+## Prérequis
 
-  * ctrl+shift+h: Se place sur le bouton historiique des connexions
-  * CTRL+f6: Alterne entre la liste des fichiers distants et locaux; quand vous n'êtes pas positionné sur une liste, vous place sur la liste des fichiers distants
-  * nvda+ctrl+alt+F: Rechercher une mise à jour du module manuellement (fonctionne hors du logiciel FileZilla)
-  * nvda+ctrl+alt+shift+F: Active/désactive la recherche de mise à jour automatique (fonctionne hors du logiciel FileZilla)
+Pour utiliser cette extension vous devez avoir un scaner USB connecté à votre ordinateur compatible TWAIN ou WIA ce qui est le cas de la plupart des scanners.
 
-## Labels
+## Comment ça marche
 
-Ce module apporte les labels suivants dans le logiciel
+Pour utiliser cette extension, allez dans le menu Outils de NVDA, puis sélectionnez Scanvox. Dans cette boîte de dialogue, vous pouvez démarrer un scan en cliquant sur le bouton Numériser. Le scan prend quelques secondes pour démarrer, puis, à la fin de la numérisation, le texte scané est automatiquement lu. Vous pouvez désactivez la lecture automatique en allant dans les paramètres de NVDA puis dans la catégorie Scanvox pour NVDA. Appuyez sur ce bouton jusqu'à ce que toutes les pages soient scannées. Une fois terminé, vous pouvez faire maj+tab à partir du bouton numérisé ou alt+t pour accéder à une zone d'édition qui contient le contenu de toutes les pages scanées ou vous pouvez enregistrer le fichier ou l'ouvrir directement dans le Bloc-notes avec les boutons correspondants.
+Si vous souhaitez supprimer les pages scannées pour scanner un nouveau document, vous pouvez appuyer sur le bouton pour annuler toutes les pages numérisées.
+Lorsque vous quittez Scanvox, toutes les pages scannées sont effacées.
 
-  * Ajout du label Historique des connexions sur le bouton après le bouton connexion rapide.
-  * Ajout du label Options de recherche dans la zone de recherche des fichiers distants
-  * Ajout du label fermer la recherche dans la zone des fichiers distants.
-  
+### Raccourcis clavier
+
+L'extension "Scanvox pour NVDA" peut être lancée de n'importe où sur votre ordinateur en appuyant sur nvda+alt+s. Ce geste peut être modifié dans la boîte de dialogue des gestes d'entrée.
+
 ## Changements
 
-### Version 2024.01.20
+### Version 2024.01.10
 
-  * Ajout d'un bouton "Quoi de neuf" dans le dialogue de mise à jour pour voir les nouvelles fonctionalitées avant de faire la mise à jour
+  * Modification du système de mise à jour pour ajouter un bouton "Quoi de neuf" qui ouvre l'aide avec les nouveauté de la version
+  * Ajout de la lecture automatique de la page scanée après la numérisation
+  * Ajout d'un séparateur de pagedans les fichier (20 astérisques) pour permettre de savoir quand on change de page
 
-### Version 2023.10.08
-  * Correction du raccourci tab pour sortir de la zone de statu de la connexion qui ne fonctionnait pas toujours
+### Version 2024.01.03
 
-### Version 2023.10.03
-  * Ajout de la prise en charge de FileZilla 3.65 en gardant la compatibillité avec les versions antérieurs
-  * Modifications de raccourci clavier, maintenant, quand vous êtes sur l'une des listes de fichiers, vous pouvez faire ctrl+f6 pour basculer d'une liste à l'autre. Lorsque vous n'êtes sur aucune liste, le raccourci amène sur la liste des fichiers distants
+  * Mise à jour de l'aide en français
 
-### Version 2023.06.23
-  * Correction de bugs mineurs
-
-### Version 2023.06.18
-  * Ajout de la possibilité de changer les raccourcis tab et échap pour basculer d'une liste à l'autre
-  * Correction d'un souci avec le programme de mise à jour
-
-### Version 2023.06.17
+### Version 2023.12.29
   * Première version
 
-Copyright ©: 2023 (Nael Sayegh et Nael-Accessvision)
+Copyright ©: 2023 (Nael Sayegh et Nael-Accessvision
 
 <!-- links section -->
 
-[1]: https://github.com/nael-sayegh/filezilla/releases/download/2023.12.22/filezilla-2024.01.20.nvda-addon
+[1]: https://github.com/Nael-Sayegh/scanvox-for-nvda/releases/download/2024.01.10/scanvox-2024.01.10.nvda-addon
 
-[2]: https://github.com/nael-sayegh/filezilla
-
+[2]: https://github.com/Nael-Sayegh/scanvox-for-nvda

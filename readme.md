@@ -1,62 +1,45 @@
-# FileZilla
+# Scanvox for NVDA
 
 * Author: Nael Sayegh
 * URL: [infos@nael-accessvision.com](mailto:infos@nael-accessvision.com)
-* Download the [stable version][1] ;
-<!-- * Download the [Latest version on Nael-AccessVision.com](https://) ; -->
-* NVDA Compatibility: 2021.3 and above ;
-* [Source code on GitHub][2] ;
+* Download the [stable version][1];
+* NVDA Compatibility: 2021.3 and above;
+* [Source code on GitHub][2];
 
 # Presentation
 
-This module brings improvements to the FileZilla software by adding keyboard shortcuts and missing labels on buttons.
+This add-on uses the Scanvox software to read your paper documents. It was created with the help of the software developer and does not require any additional installation.
 
-## Shortcuts
+## Prerequisites 
 
-  * ctrl+shift+h: Moves to the connection history button
-  * CTRL+f6: Switches between the remote and local file lists; when not focused on a list, it moves to the remote file list
-  * nvda+ctrl+alt+F: Manually checks for module updates (works outside of FileZilla)
-  * nvda+ctrl+alt+shift+F: Enables/disables automatic update checking (works outside of FileZilla)
+To use this add-on, you must have a USB scanner connected to your computer that is compatible with TWAIN or WIA, which is the case with most scanners.
 
-## Labels
+## How it works
 
-This module adds the following labels in the software
+To use this add-on, go to the NVDA Tools menu, then select Scanvox. In this dialog, you can start a scan by clicking on the Scan button. The scan takes a few seconds to start, and then, at the end of the scanning process, the scanned text is automatically read out loud. You can deactivate automatic playback by going to the NVDA settings menu, then to the scanvox for NVDA category. Press this button until all pages have been scanned. Once finished, you can read the different scanned pages by doing shift+tab from the scanned button or by doing alt+t to access an editing area with the content of all the pages or you can save the file or open it directly in Notepad using the corresponding buttons.
+If you want to delete the scanned pages to scan a new document, you can press the button to cancel all scanned pages.
+When you exit Scanvox, all scanned pages are erased.
 
-  * Adds the Connection History label to the button after the Quick Connect button.
-  * Adds the Search Options label in the remote file search field
-  * Adds the Close Search label in the remote file field.
+### Keyboard Shortcuts
+
+The add-on "Scanvox for NVDA" can be launched from anywhere on your computer by pressing nvda+alt+s. This gesture can be modified in the input gestures dialog.
 
 ## Changes
 
-### Version 2024.01.20
+### Version 2024.01.10
 
-  * Adding a button "What's new" in the update dialog too see new features before to do an update
+  * Update system modification to add a "What's New" button that opens the help with the new features of the version
+  * Addition of automatic reading of the scanned page after scanning
+  * Addition of a page separator in the file (20 asterisks) to indicate when the page changes
 
-### Version 2023.12.22
+### Version 2024.01.03
 
-  * Adding compatibility with NVDA 2024.1
+  * Updated French Help
 
-### Version 2023.10.08
-  * Fixed the tab shortcut to exit the connection status area, which was not always working.
+### Version 2023.12.29
 
-### Version 2023.10.03
-  * Added support for FileZilla 3.65 while maintaining compatibility with previous versions
-  * Modified keyboard shortcut, now when you are on one of the file lists, you can use ctrl+f6 to switch between lists. When not on any list, the shortcut takes you to the remote file list
-
-### Version 2023.06.23
-  * Fixed minor bugs
-
-### Version 2023.06.18
-  * Added the ability to change the tab and escape shortcuts to switch between lists
-  * Fixed an issue with the update program
-
-### Version 2023.06.17
   * First version
 
-Copyright ©: 2024 (Nael Sayegh and Nael-Accessvision)
+[1]: https://github.com/Nael-Sayegh/scanvox-for-nvda/releases/download/2024.01.10/scanvox-2024.01.10.nvda-addon
 
-<!-- links section -->
-
-[1]: https://github.com/nael-sayegh/filezilla/releases/download/2023.12.22/filezilla-2024.01.20.nvda-addon
-
-[2]: https://github.com/nael-sayegh/filezilla
+[2]: https://github.com/Nael-Sayegh/scanvox-for-nvda
