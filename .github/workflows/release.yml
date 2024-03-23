@@ -8,4 +8,4 @@ jobs:
   call-workflow-passing-data:
     uses: Nael-Sayegh/github-action/.github/workflows/release.yml@main
     with:
-    secrets: inherit
+      secrets: inherit
