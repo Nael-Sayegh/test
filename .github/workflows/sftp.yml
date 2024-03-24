@@ -6,8 +6,5 @@ on:
 
 jobs:
   scons: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: call reuse action
-        uses: Nael-Sayegh/github-action/.github/workflows/sftp@main
-        secrets: inherit
+    uses: Nael-Sayegh/github-action/.github/workflows/sftp@main
+    secrets: inherit
