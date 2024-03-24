@@ -7,4 +7,6 @@ on:
 jobs:
   call-workflow-passing-data:
     uses: Nael-Sayegh/github-action/.github/workflows/release.yml@main
+    with:
+      nameTag: ${GITHUB_REF#refs/*/}
     secrets: inherit
