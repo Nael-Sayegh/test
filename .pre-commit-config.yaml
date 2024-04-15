@@ -27,11 +27,14 @@ repos:
       - id: check-merge-conflict
       - id: check-ast
       - id: end-of-file-fixer
+        exclude: '(^.+\.(md|txt|css)$)|(^LICENSE$)|(^(.github|\.vscode|addon/doc|addon/locale)/)'
       - id: mixed-line-ending
+        exclude: '(^.+\.(md|txt|css)$)|(^LICENSE$)|(^(.github|\.vscode|addon/doc|addon/locale)/)'
         args:
           - "--fix=lf"
       - id: check-toml
       - id: trailing-whitespace
+        exclude: '(^.+\.(md|txt|css)$)|(^LICENSE$)|(^(.github|\.vscode|addon/doc|addon/locale)/)'
       - id: check-case-conflict
       - id: check-yaml
 
