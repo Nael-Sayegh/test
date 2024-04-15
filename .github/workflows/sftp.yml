@@ -1,10 +1,10 @@
 name: scons
-on: 
+on:
   push:
-    tags: 
+    tags:
       - '*'
 
 jobs:
-  scons: 
+  scons:
     uses: Nael-Sayegh/github-action/.github/workflows/sftp.yml@main
     secrets: inherit
