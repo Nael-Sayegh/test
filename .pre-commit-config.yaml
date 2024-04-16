@@ -4,7 +4,6 @@ ci:
 
         for more information, see https://pre-commit.ci
     autoupdate_branch: ''
-    autofix_prs: False
     autoupdate_commit_msg: 'ci(deps): pre-commit autoupdate'
     autoupdate_schedule: weekly
     skip:
