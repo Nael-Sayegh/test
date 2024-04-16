@@ -1,0 +1,10 @@
+name: release
+on: 
+  push:
+    tags: 
+      - '*'
+
+jobs:
+  scons:
+    uses: Nael-Sayegh/github-action/.github/workflows/release.yml@main
+    secrets: inherit

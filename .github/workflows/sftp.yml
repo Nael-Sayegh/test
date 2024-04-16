@@ -1,0 +1,11 @@
+name: Upload file for update
+
+on: 
+  push:
+    tags: 
+      - '*'
+
+jobs:
+  scons: 
+    uses: Nael-Sayegh/github-action/.github/workflows/sftp.yml@main
+    secrets: inherit
