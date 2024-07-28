@@ -27,7 +27,7 @@ jobs:
         run: |
           TAG=${GITHUB_REF#refs/*/} 
           TAG_WITHOUT_LAST_CHAR=${TAG%?}
-                    echo "tag_without_last_char=$TAG_WITHOUT_LAST_CHAR" >> $GITHUB_OUTPUT
+                    echo "tag=$TAG_WITHOUT_LAST_CHAR" >> $GITHUB_OUTPUT
       - name: Generating Addon
         run: |
           TAG=${{ steps.get-latest-tag.outputs.tag}}
